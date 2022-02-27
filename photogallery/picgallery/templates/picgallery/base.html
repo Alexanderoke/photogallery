@@ -22,30 +22,34 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-          <a class="nav-link" href="#">Features</a>
-          <a class="nav-link" href="#">Pricing</a>
-          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          <a class="nav-link active" aria-current="page" href="{% url 'picgallery-home' %}">Home</a>
+          <a class="nav-link" href="{%url 'picgallery-addpics'%}">Add pics</a>
+          <a class="nav-link" href="{% url 'picgallery-gallery'%}">Gallery</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Categories
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Nature</a></li>
+              <li><a class="dropdown-item" href="#">Food</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Fashion</a></li>
+            </ul>
+          </li>
+  
         </div>
       </div>
     </div>
   </nav>
 
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        nav
 
-      </div>
-      <div class="col-md-9">
-        gallery
+  
 
 
-      </div>
-    </div>
-  </div>
-  <div class="container">
+  <div class="container m-5 ">
+    
     {% block content %}
+    
   {% endblock content %}
   </div>
   
