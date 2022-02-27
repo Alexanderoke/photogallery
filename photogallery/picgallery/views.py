@@ -8,4 +8,10 @@ from django.http import HttpResponse
 home route function
 '''
 def home(request):
-  return render(request,'picgallery/home.html')
+  return render(request,'picgallery/home.html',)
+
+def gallery(request):
+  return render(request,'picgallery/gallery.html',{'title':'Gallery'})
+
+def addpics(request):
+  return render(request,'picgallery/addpics.html',{'title':'Add Pictures'})
