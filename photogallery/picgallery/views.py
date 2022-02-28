@@ -13,7 +13,7 @@ def home(request):
 
 def gallery(request):
   categories = Category.objects.all()
-  pictures = Picture.object.all()
+  pictures = Picture.objects.all()
   context ={'title':'Gallery' ,'categories':categories, 'pictures':pictures}
   return render(request,'picgallery/gallery.html',context)
 

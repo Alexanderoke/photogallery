@@ -1,5 +1,28 @@
 {% extends "picgallery/base.html" %}
   {% block content %}
-  <h1>Pics Gallery</h1>
+  <h1>Pics View</h1>
+
+
+  <div class="container m-5">
+    <div class="row">
+      <div class="col">
+
+
+        <a href="{% url 'picgallery-gallery' %}" class="btn btn-dark my-3" >Back to Gallery</a>
+        <div>
+          <img style="max-width: 100%; max-height: 100%"
+               src="" alt="">
+
+               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est debitis soluta natus sit pariatur labore quasi repellendus ea quae, architecto laboriosam impedit eaque sunt voluptatum voluptates deserunt dignissimos itaque quam?</p>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
   {% endblock content %}
     
