@@ -4,16 +4,15 @@
 
 
   <div class="container m-5">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col">
 
-
         <a href="{% url 'picgallery-gallery' %}" class="btn btn-dark my-3" >Back to Gallery</a>
-        <div>
+        <div style="height: 90vh;">
           <img style="max-width: 100%; max-height: 100%"
-               src="" alt="">
+               src="{{picture.image.url}}" alt="">
 
-               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est debitis soluta natus sit pariatur labore quasi repellendus ea quae, architecto laboriosam impedit eaque sunt voluptatum voluptates deserunt dignissimos itaque quam?</p>
+               <p>{{picture.description}}</p>
         </div>
 
 
