@@ -17,9 +17,12 @@
           </div>
 
           <div class="m-3">
-            <label>Description</label>
+            <label>Choose Category</label>
             <select class="form-control" name="category" id="formFile">
-              <option value='none'> Choose a Category </option>
+              
+              {% for category in categories %}
+              <option  value='{{ category.id }}'> {{category.name}} </option>                  
+              {%endfor%}
             </select>
           </div>
 
@@ -28,6 +31,11 @@
             <label>Upload Picture</label>
             <input name="image" class="form-control" type="file" id="formFile">
           </div>
+
+          <button type="submit" class="btn btn-primary" >Submit</button>
+
+
+
         </form>
         
 
