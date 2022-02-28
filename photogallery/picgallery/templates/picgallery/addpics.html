@@ -1,14 +1,34 @@
 {% extends "picgallery/base.html" %}
 
 {% block content %}
-<h1>Add Pictures</h1>
-
 
 <div class="container">
   <div class="row justify-content-center">
+    
     <div class="col-md-4">
+      <h1>Add Pictures</h1>
       <a href="{% url 'picgallery-gallery' %}" class="btn btn-dark my-3" >Back to Gallery</a>
       <div class="card">
+        <form action="">
+
+          <div class="m-3">
+            <label>Description</label>
+            <input class="form-control" name="description" type="text" id="formFile">
+          </div>
+
+          <div class="m-3">
+            <label>Description</label>
+            <select class="form-control" name="category" id="formFile">
+              <option value='none'> Choose a Category </option>
+            </select>
+          </div>
+
+
+          <div class="m-3">
+            <label>Upload Picture</label>
+            <input name="image" class="form-control" type="file" id="formFile">
+          </div>
+        </form>
         
 
       </div>
