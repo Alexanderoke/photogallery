@@ -31,5 +31,5 @@ add pictures route function
 def addpics(request):
   categories = Category.objects.all()
 
-  
-  return render(request,'picgallery/addpics.html',{'title':'Add Pictures'})
+  context ={'title':'Add Pictures' ,'categories':categories}
+  return render(request,'picgallery/addpics.html',context)
