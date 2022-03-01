@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse
 from .models import Category, Picture
 
@@ -48,6 +48,7 @@ def addpics(request):
         image=image
 
       )
+      return redirect('picgallery-gallery')
 
   context ={'title':'Add Pictures' ,'categories':categories}
   return render(request,'picgallery/addpics.html',context)
