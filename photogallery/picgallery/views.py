@@ -48,6 +48,7 @@ def addpics(request):
         image=image
 
       )
+
       return redirect('picgallery-gallery')
 
   context ={'title':'Add Pictures' ,'categories':categories}
