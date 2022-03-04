@@ -28,7 +28,7 @@ def gallery(request):
 add pictures route function
 '''
   
-def addpics(request):
+def addpics(request, methods=['GET','POST']):
   categories = Category.objects.all()
 
   if request.method == 'POST':
