@@ -8,6 +8,7 @@ This web app allows user toupload and get to llok atphotos they like from differ
 * on the terminal type pythone manage.py runserver
 you will need python 3. and above to run the app
 ## Live link
+https://picgalleryoke.herokuapp.com/
 ## Known Bugs
 The web app runs well though the photo upload does not work as expected.
 ## Technologies Used
